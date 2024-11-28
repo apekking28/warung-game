@@ -125,6 +125,7 @@ class PublisherResource extends Resource
                             ->required()
                             ->image()
                             ->directory('pullishers')
+                            ->imageEditor()
                             ->columnspanfull(),
                         Toggle::make('active')
                             ->required()
