@@ -133,7 +133,7 @@ class OrderResource extends Resource
                     ->sortable(),
                 TextColumn::make('status')
                     ->badge()
-                    ->color(fn (string $state): string => match ($state) {
+                    ->color(fn(string $state): string => match ($state) {
                         'pending' => 'warning',
                         'processing' => 'info',
                         'completed' => 'success',
@@ -142,7 +142,7 @@ class OrderResource extends Resource
                     ->sortable(),
                 TextColumn::make('payment_status')
                     ->badge()
-                    ->color(fn (string $state): string => match ($state) {
+                    ->color(fn(string $state): string => match ($state) {
                         'unpaid' => 'danger',
                         'paid' => 'success',
                         'refunded' => 'warning',

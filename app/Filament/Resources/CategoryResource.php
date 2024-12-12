@@ -91,7 +91,7 @@ class CategoryResource extends Resource
                 TextColumn::make('slug')
                     ->searchable()
                     ->sortable(),
-                    TextColumn::make('description')
+                TextColumn::make('description')
                     ->searchable()
                     ->sortable()
                     ->wrap()

@@ -25,7 +25,7 @@ class CustomerResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-users';
 
-    protected static ?string $navigationGroup = 'User Management';
+    protected static ?string $navigationGroup = 'Users Management';
 
     protected static ?int $navigationSort = 2;
 
@@ -61,7 +61,7 @@ class CustomerResource extends Resource
     //                         ->required()
     //                         ->columnSpanFull()
     //                         ->maxLength(65535),
-                        
+
     //                     Toggle::make('active')
     //                         ->required()
     //                         ->default(true)
@@ -111,8 +111,8 @@ class CustomerResource extends Resource
                     ->trueLabel('Verified users')
                     ->falseLabel('Unverified users')
                     ->queries(
-                        true: fn (Builder $query) => $query->whereNotNull('email_verified_at'),
-                        false: fn (Builder $query) => $query->whereNull('email_verified_at'),
+                        true: fn(Builder $query) => $query->whereNotNull('email_verified_at'),
+                        false: fn(Builder $query) => $query->whereNull('email_verified_at'),
                     ),
             ])
             ->actions([

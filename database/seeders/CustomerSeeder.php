@@ -22,8 +22,8 @@ class CustomerSeeder extends Seeder
                 'password' => Hash::make('password'),
                 'phone' => $faker->phoneNumber(),
                 'address' => $faker->address(),
-                'created_by' => 1, 
-                'updated_by' => 1, 
+                'created_by' => 1,
+                'updated_by' => 1,
             ]);
         }
 

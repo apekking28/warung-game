@@ -38,7 +38,7 @@ class PublisherResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-building-office-2';
 
-    protected static ?string $navigationGroup = 'Management';
+    protected static ?string $navigationGroup = 'Publishers Management';
 
     protected static ?string $label = 'Publisher';
 
@@ -65,7 +65,7 @@ class PublisherResource extends Resource
                                     ->dehydrated()
                                     ->maxLength(255)
                                     ->unique(Publisher::class, 'slug', ignoreRecord: true),
-                                    Select::make('country')
+                                Select::make('country')
                                     ->required()
                                     ->searchable()
                                     ->createOptionForm([
