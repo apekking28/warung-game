@@ -110,20 +110,15 @@ php artisan migrate --seed
 
 8. Storage link
 ```bash
-php artisan migrate --seed
+php artisan storage:link
 ```
 
-9. Install Filament
-```bash
-php artisan filament:install --panels
-```
-
-10. Create first admin
+9. Create first admin
 ```bash
 php artisan make:filament-user
 ```
 
-11. Compile assets
+10. Compile assets
 ```bash
 npm run build
 ```
